@@ -1,0 +1,212 @@
+\documentclass[a4paper]{article}
+    
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {akhil nukala}}\\
+	Hyderabad $\cdot$ akhil2.new@gmail.com $\cdot$ 8954171822 $\cdot$ https://www.linkedin.com/in/akhil-n-22a20174/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Indian Institute of Technology, Roorkee (IITR)}\hfill Roorkee\\
+Integrated Dual Degree B. Tech and M.B.A. Process Engineering \textit{GPA: 7.15} \hfill 2012 - 2017\\
+\vspace{2mm}
+\textbf{Sri Chaitanya Junior College}\hfill Vijayawada\\
+Higher Secondary Education (12th) GPA: 9.41 \hfill 2010 - 2012\\
+\vspace{2mm}
+\textbf{Viswabharati IIT Olympiad school}\hfill Gudivada\\
+SSC (10th) GPA: 9.3 \hfill  - 2010\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Algonox Technologies} \hfill Hyderabad, Telangana\\
+\textit{Software Developer(Data Science)} \hfill June 2017 | Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Design and Develop modules for product ACE (Algonox Cognitive Engine)
+	\item Designing data pipeline to consume the data for machine learning models
+	\item Responsible for building applications which leverage Natural Language Processing
+    \item Developing chatbots with NLP and NLU capabilites
+    \item Deploy solutions in AWS(EC2).
+\end{itemize}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Python, Java, Node JS, C, C ++                                    \\
+	Web Technologies:      & RESTful Services, Flask, HTML, CSS, JavaScript                    \\
+	IDE:                   & Spyder, Eclipse, VSCode                                           \\
+	Software Packages:     & Microsoft Bot Framework, Numpy, Keras, Apache Solr, Sci-kit Learn \\
+	Version Control:       & Git                                                               \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Product}
+{\textbf{ACE (Algonox Congnitive Engine)}} {\sl ABBYY, Python, Flask, pandas, MySql, docker, kafka} \hfill June 2018 | Present\\
+A product which automates the invoice processing flows.\\
+
+\begin{itemize} \itemsep 1pt
+	\item Designed and developed the business rules module which facilitate to change,modify, compare the extracted fields from ACE.
+	\item Developed digital signature extraction module which extracts digital signature from a digitally signed pdf.
+    \item Developed custom parser for the ABBYY xml output generated.   
+    \item Developed integration module connecting UI, backend, database.
+    \item Developed wrapper for ABBYY SDK in python.
+    \item Deployement of the product in AWS(EC2).
+\end{itemize}
+
+\vspace*{2mm}
+\header{Projects \& Services}
+{\textbf{ACE (Algonox Congnitive Engine) for PGS}} {\sl ABBYY, Python, Flask, MySql, docker, kafka} \\
+Customized implementation of ACE for prudential global services.\\
+\vspace*{2mm}
+{\textbf{Data Visualization and Monitoring Tool}} {\sl Kibana, ElasticSearch, Logstash} \\
+A alerting system which monitors the RPA bot logs.\\
+\vspace*{2mm}
+{\textbf{ETL Automation}} {\sl Java, Spring Boot, Selenium Web Driver} \\
+Built data retrieval engine to get medical practioners data. Preprocessed the data collected from data
+retrieval engine to update the records. The updated records are loaded to the portal.\\
+\vspace*{2mm}
+{\textbf{Information Retrieval }} {\sl Python, BeautifulSoup, Scikit Learn} \\
+A simple to use information retrieval app to check for warning letters issued by the government and
+actions to be taken with deadlines.\\
+\vspace*{2mm}
+{\textbf{Free Text Analysis}} {\sl Java, Spring Boot, Soundex} \\
+A portal designed to search sales information with free text natural language queries to retreive the
+information asked by the user. \\
+{\textbf{Ecommerce Chat Bot}} {\sl Apache Solr, Node JS, Bot Framework, Stanford Core NLP} \\
+A chat bot designed for interacting with the shopping website customers to search and retrieve the
+relevant results.\\
+\vspace*{2mm}
+{\textbf{Form Filling Bot}} {\sl Node JS, Bot Framework, Microsoft Speech API, Bing Vision API} \\
+A chatbot designed for a insurance company to process the claims faster by interacting with customers
+real time.\\
+\vspace*{2mm}
+{\textbf{Doc Analytics}} {\sl Python, VBA, PyWin32, Tesseract OCR} \\
+A textual analytics suite to classify business documents. The classifications include Invoices, Salary
+Slips, Contract Documents.\\
+\vspace*{2mm}
+\vspace*{2mm}
+
+\header{POC's}
+{\textbf{ACE (Algonox Congnitive Engine) for HSBC}} {\sl Spacy, RasaNLU} \\
+Extracting name entities from the HSBC specific documents.\\
+\vspace*{2mm}
+{\textbf{Food Trend Analysis}} {\sl Python, Matplotlib, Shapely} \\
+Designed data pipeline to ingest the data from various sources and do trend analysis of the dishes for
+any given area in the country.\\
+\vspace*{2mm}
+{\textbf{Sentimental Analysis}} {\sl Python, Keras, Numpy} \\
+Developed an end-to-end sentimental analysis model to understand the customer product reviews.\\
+\vspace*{2mm}
+{\textbf{Semantic Search Engine}} {\sl Python, Apache Solr, Numpy} \\
+A semantic search engine designed to retrieve the results for drug research with ontology and relations
+between different proteins.\\
+\vspace*{2mm}
+{\textbf{Resume Parser}} {\sl Python, clustering, tensorflow} \\
+Extracting various information from a resume like skills, Experience, and calculating a profile score which is useful for assessing a candidate.\\
+
+\header{Interships}
+{\textbf{Optimization Algorithms}} {\sl Python} \\
+Implemented Particle Swarm Optimization(PSO) and Differential Evolution(DE) Algorithms in Python
+and applied these techniques to constrained and uncontrained optimization problems.\\
+\vspace*{2mm}
+
+\header{Academic Achievements} 
+{\textbf{IIT JEE}} \hfill 2012\\
+Achieved rank of 4413 in IIT JEE entrance exam, in General Category\\
+\vspace*{2mm}
+{\textbf{EAMCET}} \hfill 2012\\
+Achieved rank of 979 in EAMCET\\
+\vspace*{2mm}
+
+\header{Github profile and Relavant Courses} 
+{\textbf{NLP-with-DeepLearning}}\\
+https://github.com/lihka1/cs224n-NLP-with-DeepLearning\\
+\vspace*{2mm}
+{\textbf{Honor code certificate courses}}\\
+\begin{enumerate}
+  \item Introduction to computational thinking in Python.\\
+  \item Computational Structures Part1: Digital Circuits.\\
+  \item Computational Structures Part2: Computer Architecture.\\
+\end{enumerate}
+{\textbf{Self studied MIT OCW courses}}\\
+\begin{enumerate}
+  \item Introduction to Algorithms.\\
+  \item Mathematics for computer science.\\
+  \item Probabilistic System Analysis and Applied probability.\\
+  \item Elements of software construction.\\
+\end{enumerate}
+
+\ 
+\end{document}
