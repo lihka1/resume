@@ -1,0 +1,326 @@
+\documentclass[a4paper]{article}
+    
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \usepackage{fontawesome5}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {akhil nukala}}\\
+	Hyderabad $\cdot$ akhil2.new@gmail.com $\cdot  \faPhone $ +91-6281174946 $\cdot$ https://www.linkedin.com/in/akhil-n-22a20174/\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Indian Institute of Technology, Roorkee (IITR)}\hfill Roorkee\\
+Integrated Dual Degree B. Tech and M.B.A. Process Engineering \textit{GPA: 7.15} \hfill 2012 - 2017\\
+\vspace{2mm}
+\textbf{Sri Chaitanya Junior College}\hfill Vijayawada\\
+Higher Secondary Education (12th) GPA: 9.41 \hfill 2010 - 2012\\
+\vspace{2mm}
+\textbf{Viswabharati IIT Olympiad school}\hfill Gudivada\\
+SSC (10th) GPA: 9.3 \hfill  - 2010\\
+\vspace{2mm}
+
+%==== WORK ====%
+\header{WORK}
+\vspace{1mm}
+\textbf{S\&P Global} \hfill Hyderabad, Telangana\\
+\textit{Senior Software Engineer - 2 (Python, Java, NLP)} \hfill  Feb 2021 | Present\\
+\vspace{-1mm}
+\vspace{1mm}
+\textbf{Foreseer AI (Acquired by S\&P Global)} \hfill Hyderabad, Telangana\\
+\textit{Senior Software Developer(Python, NLP)} \hfill June 2020-Feb 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+   \item Developing and improving extraction models using NLP and heuristic models to enhance efficiency of Foreseer, a financial data extraction software.
+\item Developing and automating data engineering processes, containerization of the product, and overseeing deployment infrastructure to improve scalability and portability.
+\item Administering and managing the product's database, ensuring optimal performance and data integrity.
+\item Lead and manage a team of developers and data scientists in implementing Foreseer and gathering requirements for various product implementations.
+\item Collaborating with users to understand their needs, providing technical support and maintenance, and developing and maintaining technical documentation.
+\end{itemize}
+\vspace{1mm}
+\textbf{Algonox Technologies} \hfill Hyderabad, Telangana\\
+\textit{Senior(Lead) Software Developer(Data Science)} \hfill June 2017 - Dec 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Design, Develop frameworks for Automating workflows.
+    \item Analysis of production scenarios for various products.
+	\item Design and Develop modules for product ACE (Business Rules, Preprocessing Frameworks)
+	\item Responsible for building applications which leverage Natural Language Processing
+    \item Developing chatbots with NLP and NLU capabilites
+    \item Deploy solutions in cloud AWS(EC2), docker.
+\end{itemize}
+\vspace{2mm}
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: & Python, Core Java, Javascript, Node JS, C, C++ (Basics) \\
+	DevOps:                & Docker, Kubernetes, Graphana, Linux, Shell scirpting    \\
+	Web frameworks:        & Spring, Django, Flask                                   \\
+	IDE:                   & Intellij, PyCharm, Spyder, VSCode                       \\
+	VersionControl:        & GIT, BitBucket                                          \\
+	CI/CD:                 & Azure DevOps, Jenkins                                   \\
+	Agile:                 & JIRA, Azure board                                       \\
+	Database:              & PSQL, MSSQL, NoSQL                                      \\
+	Testing:               & Selenium                                                \\
+	Cloud:                 & AWS EC2, Lambda, ECS, EKS                               \\
+	Chat Bot Frameworks:   & Microsoft Bot Framwork, Dialog Systems                  \\
+	Search Frameworks:     & Elasticsearch, Kibana, Apache Solr, Redis               \\
+	AI/ML:                 & LLM, NLP, Tensorflow, keras, Sklearn                         \\
+	ETL/Workflow:          & Airflow, Java ETL, Camunda, ApacheMQ, Kafka             \\
+	BigData:               & Apache Spark                                            \\
+\end{tabular}
+\vspace{2mm}
+
+\header{Professional Experience}
+\vspace{1mm}
+\textbf{FORESEER Product (2020-Present)}
+{\hfill \sl Java, Python, Azure DevOps, Docker, Kubernetes} \\
+Foreseer is a powerful software tool for extracting financial data and gaining valuable insights from unstructured data sources such as financial documents. Its user-friendly features, multiple programming language support, messaging queue architecture, and NLP capabilities make it an essential tool for financial professionals.\\
+\vspace{1mm}
+\textbf{Role}
+Senior Software Engineer.\\
+\vspace{1mm}
+\textbf{Responsibilites}
+\begin{itemize} \itemsep 1pt
+\item Develop and improve the overall \textbf{extraction model} efficiency of the product using NLP and heuristic models.
+\item Develop a \textbf{rule framework} for clients to write business rules and integrate them into the foreseer tool.
+\item Implement and maintain \textbf{containerization} of the product, such as Docker or Kubernetes, to improve scalability and portability.
+\item Develop and automate \textbf{data engineering} processes to support the product's data requirements.
+\item \textbf{Automate} various aspects of the product development and deployment process to improve efficiency and quality.
+\item Oversee the deployment \textbf{infrastructure} for the product, such as migrating from ECS to EKS.
+\item Administer and manage the product's \textbf{database}, ensuring optimal performance and data integrity.
+\item Provide ongoing \textbf{support} and \textbf{maintenance} for the product, including troubleshooting issues, applying updates and patches, and managing user access and permissions.
+\item Participate in discussions with stakeholders to identify product requirements, design features, and ensure timely delivery.
+\item Conduct \textbf{research} on new technologies, tools, and methodologies that can enhance the product's performance and capabilities.
+\end{itemize}
+
+\textbf{FORESEER Implementations} \\
+\begin{itemize} \itemsep 1pt
+
+\item \textbf{Fundamentals data collection process (2020-2021)} \\
+Implementation \& fine-tuning of foreseer tool for collection of fundamentals data from financial statements. \\ 
+\vspace*{2mm}
+\item \textbf{Supplemental data collection process (2021-2022)} \\
+Implementation \& fine-tuning of foreseer tool for collection of supplemental data from financial statements. \\ 
+\vspace*{2mm}
+\item \textbf{Estimates data collection process(2022-Present)} \\
+Implementation \& fine-tuning of foreseer tool for collection of estimates data from financial statements. \\ 
+\end{itemize}
+\vspace{1mm}
+\textbf{Responsibilites} \\
+\begin{itemize} \itemsep 1pt
+\item Gather requirements and participate in the entire SDLC for various product implementations.
+\item Develop the workflow and data pipeline implementation.
+\item Manage and lead a team of developers and data scientists in the implementation of the product.
+\item Collaborate with users to understand their needs, provide support, and gather feedback for product improvement.
+\item Develop and maintain technical documentation, including user manuals, installation guides, and system specifications.
+\item Provide technical assistance and support to clients and internal teams, and troubleshoot issues as they arise.
+\end{itemize}
+
+\vspace*{2mm}
+
+{\textbf{Reporting FrameWork (2019)}} {\hfill Pyspark, Python, Flask, pandas, MSSQL, docker} \\
+\vspace{1mm}
+This report framework is an end-to-end configurable solution for generating reports with an intuitive and rich user interface, making it easy to perform real-time analysis. With its customizable features and flexibility, it offers a seamless experience for users to quickly generate reports and gain valuable insights.\\
+\vspace{1mm}
+\textbf{Role}
+Lead Python Engineer.\\
+\vspace{1mm}
+\textbf{Responsibilites} \\
+\begin{itemize} \itemsep 1pt
+\item Design and develop asynchronous \textbf{report generation} process using Python and other relevant technologies, such as Kafka, to handle long running report generation tasks in the background.
+\item Develop \textbf{customizable} report formatting options, such as different file formats and styles, to meet the diverse needs of stakeholders.
+\item Develop an archival mechanism for large data generated by report generation and analysis processes, ensuring data storage is optimized and available for future reference.
+\item Collaborate with stakeholders to define specific needs for customization of report formatting and archival mechanism.
+\item Work with data engineering team to ensure the timely retrieval of archived data for future analysis.
+\item Develop \textbf{automated} processes for report generation, analysis, and archival mechanism, such as scheduling and distribution.
+\item Ensure that the reports and analysis generated are accurate, timely, and consistent with the stakeholders' requirements.
+\item \textbf{Optimize} the report generation, analysis, and archival processes for performance, scalability, and maintainability.
+\item Develop and maintain documentation, including user manuals and technical specifications.
+\item Troubleshoot issues with report generation, analysis, and archival mechanism, and work with other teams to resolve them.
+\item Stay up-to-date with the latest trends and best practices in report generation, data analysis, and related technologies.
+\item Provide leadership and mentorship to other developers working on the report generation, analysis, and archival processes.
+\item Collaborate with other teams, such as data science and product management, to ensure that the reports, analysis, and archival mechanism meet the business needs.
+\item Continuously monitor and evaluate the effectiveness of the report generation, analysis, and archival processes, and make improvements as needed.
+\end{itemize}
+\vspace*{2mm}
+
+{\textbf{Credit Identification(CID) FrameWork (2019)}} {\hfill Pyspark, Python, Flask, pandas, MSSql, docker}\\
+\vspace{1mm}
+The credit identification tool is a powerful software tool that leverages machine learning algorithms to identify and analyze various factors related to creditworthiness, such as credit history, employment status, and income level. The tool provides a user-friendly interface that allows financial professionals to easily input and analyze data in real-time, with an intuitive and rich UI. The tool is highly configurable, allowing for customizations to meet the specific needs of various industries and use cases. With its ability to quickly and accurately identify credit risks, the credit identification tool is an essential tool for financial professionals looking to make informed decisions about lending and credit management.\\
+\vspace{1mm}
+\textbf{Role}
+Senior Software Engineer (Python).\\
+\vspace*{1mm}
+\textbf{Responsibilites} \\
+\begin{itemize} \itemsep 1pt
+\item Developed a configurable module that enables users to easily configure new funds for credit identification, resulting in an increase in system flexibility and usability.
+\item Designed and developed an intuitive and responsive UI that showcases all the credit identified records in real-time, providing stakeholders with timely and accurate data.
+\item Utilized Kafka to efficiently process and match large volumes of data, resulting in improved data processing and reduced processing time.
+\item Proficient in PySpark, developed PySpark code to handle big data matching, resulting in the efficient processing of large data sets.
+\item Conducted code reviews to ensure the quality and maintainability of the codebase, resulting in reduced errors and increased efficiency.
+\item Implemented best practices for software development, version control, and testing, resulting in a robust and maintainable codebase.
+\item Collaborated with data scientists, developers, and stakeholders to ensure that the system met their needs and requirements, resulting in a high degree of stakeholder satisfaction.
+\item Monitored the Kafka cluster and ensured that it was running smoothly, resulting in reduced downtime and increased system availability.
+\item Developed and maintained documentation for the system, ensuring that it was accessible and understandable to all stakeholders.
+\item Stayed up-to-date with emerging trends and technologies in data science and full-stack development, and regularly attended conferences and workshops to develop new skills and knowledge.
+\vspace*{2mm}
+\end{itemize}
+
+{\textbf{ACE Product(Algonox Congnitive Engine) (2018-2020)}} {\hfill ABBYY, Python, Flask, pandas, MySql, docker, kafka} \\
+\vspace*{1mm}
+ Invoice processing flow tool with intuitive UI, that uses AI to automate the data extraction process can help organizations to reduce processing time, increase accuracy, and improve efficiency in their invoicing process\\
+ \vspace*{2mm}
+\textbf{Role}
+Software Engineer (Data science).\\
+\vspace*{1mm}
+\textbf{Responsibilites} \\
+\begin{itemize} \itemsep 1pt
+	\item Designed and developed the business rules framework which facilitate to change,modify, compare the extracted fields from ACE.
+	\item Developed digital signature extraction module which extracts digital signature from a digitally signed pdf.
+    \item Developed custom parser for the ABBYY xml output generated.   
+    \item Developed integration module connecting UI, backend, database.
+    \item Developed wrapper for ABBYY SDK in python.
+    \item Deployement of the product in AWS(EC2).
+\end{itemize}
+
+\textbf{Implementations} \\
+\begin{itemize} \itemsep 1pt
+
+\item \textbf{ACE Product Integrations} \\
+Implementation \& fine-tuning of ACE tool for various clients
+(Delloite, HSBC, ICICI, Invesco, PGS). \\  
+\end{itemize}
+\vspace*{2mm}
+\header{Projects \& Services}
+{\textbf{CID, ReportFrameWork Implementations}}
+Two CID implementations and one ReportFramework implementation. \\
+\vspace*{2mm}
+{\textbf{Data Visualization and Monitoring Tool}} {\sl Kibana, ElasticSearch, Logstash} \\
+A alerting system which monitors the RPA bot logs.\\
+\vspace*{2mm}
+{\textbf{ETL Automation}} {\sl Java, Spring Boot, Selenium Web Driver} \\
+Built data retrieval engine to get medical practioners data. Preprocessed the data collected from data
+retrieval engine to update the records. The updated records are loaded to the portal.\\
+\vspace*{2mm}
+{\textbf{Information Retrieval }} {\sl Python, BeautifulSoup, Scikit Learn} \\
+A simple to use information retrieval app to check for warning letters issued by the government and
+actions to be taken with deadlines.\\
+\vspace*{2mm}
+{\textbf{Free Text Analysis}} {\sl Java, Spring Boot, Soundex} \\
+A portal designed to search sales information with free text natural language queries to retreive the
+information asked by the user. \\
+{\textbf{Ecommerce Chat Bot}} {\sl Apache Solr, Node JS, Bot Framework, Stanford Core NLP} \\
+A chat bot designed for interacting with the shopping website customers to search and retrieve the
+relevant results.\\
+\vspace*{2mm}
+{\textbf{Form Filling Bot}} {\sl Node JS, Bot Framework, Microsoft Speech API, Bing Vision API} \\
+A chatbot designed for a insurance company to process the claims faster by interacting with customers
+real time.\\
+\vspace*{2mm}
+{\textbf{Doc Analytics}} {\sl Python, VBA, PyWin32, Tesseract OCR} \\
+A textual analytics suite to classify business documents. The classifications include Invoices, Salary
+Slips, Contract Documents.\\
+\vspace*{2mm}
+\vspace*{2mm}
+
+\header{POC's}
+{\textbf{Food Trend Analysis}} {\sl Python, Matplotlib, Shapely} \\
+Designed data pipeline to ingest the data from various sources and do trend analysis of the dishes for
+any given area in the country.\\
+\vspace*{2mm}
+{\textbf{Sentimental Analysis}} {\sl Python, Keras, Numpy} \\
+Developed an end-to-end sentimental analysis model to understand the customer product reviews.\\
+\vspace*{2mm}
+{\textbf{Semantic Search Engine}} {\sl Python, Apache Solr, Numpy} \\
+A semantic search engine designed to retrieve the results for drug research with ontology and relations
+between different proteins.\\
+\vspace*{2mm}
+{\textbf{Resume Parser}} {\sl Python, clustering, tensorflow} \\
+Extracting various information from a resume like skills, Experience, and calculating a profile score which is useful for assessing a candidate.\\
+
+
+\header{Interships}
+{\textbf{Optimization Algorithms}} {\sl Python} \\
+Implemented Particle Swarm Optimization(PSO) and Differential Evolution(DE) Algorithms in Python
+and applied these techniques to constrained and uncontrained optimization problems.\\
+\vspace*{2mm}
+
+\header{Academic Achievements} 
+{\textbf{IIT JEE}} \hfill 2012\\
+Achieved rank of 4413 in IIT JEE entrance exam, in General Category\\
+\vspace*{2mm}
+{\textbf{EAMCET}} \hfill 2012\\
+Achieved rank of 979 in EAMCET\\
+\vspace*{2mm}
+
+\ 
+\end{document}
